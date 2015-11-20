@@ -1,0 +1,29 @@
+body{
+
+    background-image: url("sharebackground.jpg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    margin-top: -60px;
+
+
+}
+#p1{
+      width: 583px;
+    margin: 41px 252px;
+    background-color: mistyrose;
+    border-radius: 31px;
+    padding: 3% 4%;
+}
+#div1{
+
+position:absolute;
+display:none;
+
+
+}
+
+
+
+
+
+

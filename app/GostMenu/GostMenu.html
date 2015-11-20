@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>GostMenu</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="box">
+    <div class="link link-mission" >
+        <span class="icon"></span>
+        <a href="#" class="button" data-title="this is my mission">MISSION
+       <span class=" line line-top"></span>
+       <span class=" line line-left"></span>
+       <span class=" line line-right"></span>
+       <span class=" line line-bottom"></span>
+        </a>
+
+    </div>
+    <div class="link link-play" >
+        <span class="icon"></span>
+        <a href="#" class="button" data-title="this is my play">MISSION
+            <span class=" line line-top"></span>
+            <span class=" line line-left"></span>
+            <span class=" line line-right"></span>
+            <span class=" line line-bottom"></span>
+
+        </a>
+    </div>
+    <div class="link link-touch" >
+        <span class="icon"></span>
+        <a href="#" class="button" data-title="this is my touch">MISSION
+        <span class=" line line-top"></span>
+        <span class=" line line-left"></span>
+        <span class=" line line-right"></span>
+        <span class=" line line-bottom"></span>
+        </a>
+    </div>
+   <div class="tip">
+       <em></em>
+       <span></span>
+   </div>
+</div>
+<script>
+  
+  $(function(){
+            $(".link .button").hover(function(){  //绑定鼠标略过事件
+                var title = $(this).attr("data-title");  // 使用attr提取data-title
+                $(".tip em").text(title);        //追加到.tip 下面的em节点
+                var pos= $(this).offset().left;     // 获取当前按钮到浏览器左边的距离
+                var dis = ($(".tip").outerWidth()-$(this).outerWidth())/2;  //计算文本弹出框居中要向左移动的距离
+                var f = pos-dis;
+                $(".tip").css({"left":f+"px"}).animate({"top":195,"opacity":1},300);//显示浮动框内容
+            },function(){
+              $(".tip").animate({"top":160,"opacity":0},300);
+            })
+        })
+</script>
+</body>
+</html>

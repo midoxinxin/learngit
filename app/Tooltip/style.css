@@ -1,0 +1,45 @@
+/* 
+* @Author: wenxin.dong
+* @Date:   2015-10-05 12:54:28
+* @Last Modified by:   anchen
+* @Last Modified time: 2015-10-05 14:34:10
+*/
+*{
+
+padding:0;
+margin:0;
+font-size:14px;
+line-height: 1.8;
+font-family: "Microsoft YaHei","微软雅黑";
+}
+
+.div{
+    width:500px;
+    margin:30px auto;
+    padding:20px 30px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow:0px 0px 0px 10px rgba(0, 0 ,0,0.2);
+}
+.div h3{
+    color:#0099ff;
+    font-size: 20px;
+}
+.div .tooltip{
+    color:#0099ff;
+    cursor:pointer;  //鼠标划过会变成手型
+
+}
+.tooltip-box{
+
+    display:block;
+    background-color: #fff;
+    line-height: 1.6;
+    border:1px solid #66ccff;
+    color:#333;
+    padding:20px;
+    font-size: 12px;
+    border-radius: 5px;
+    overflow:auto;   //当内容成超出框大小时，添加滚动条
+}

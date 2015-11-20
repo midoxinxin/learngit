@@ -1,0 +1,397 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <script src="../assets/js/backtop/index.js"></script>
+
+  <style>
+   body{
+       background-image:url(../assets/img/bootstrap-mdo-sfmoma-02.jpg) ;
+
+      }
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: black;
+      margin: 0 5% 0 8%;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      margin-top: 25px
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+  .muted{
+      color:black;
+
+
+  }
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+     .lead{
+
+         width: 900px;
+       }
+
+       .img-circle {
+        border-radius: 500px;
+       float: left;
+       margin-right: 8%;
+    }
+
+    
+
+  </style>
+
+  <!-- NAVBAR
+    ================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">Application</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="http://www.misslays.sinaapp.com/">个人主页</a></li>
+                <li><a href="../examples/blog.html">博客</a></li>
+                <li><a href="#contact">联系</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人信息 <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">简历</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+    <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="img-circle" src="../assets/img/app/macbutton.jpg" style="border-radius: 500px;float: left; margin-right: 8%;">
+        <h2 class="featurette-heading">Mac 桌面菜单效果<span class="muted"></span></h2>
+        <p class="lead">Mac OS X 桌面菜单效果是一款结合jQuery+HTML5+CSS3实现的模拟苹果Mac OS X操作系统的桌面快捷菜单。滑动鼠标可以选择相应菜单</p>
+              <a class="btn btn-large btn-primary" href="../app/MacMenu/mac_menu.html">点击查看 &raquo;</a>
+
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="img-circle" src="../assets/img/app/icegame.jpg" style="border-radius: 500px;float: left; margin-right: 8%;" >
+        <h2 class="featurette-heading">冰桶挑战游戏 <span class="muted"></span></h2>
+        <p class="lead">通过js实现网页小游戏，进行简单的鼠标点击事件，实现计时积分。Oh yeah, it's that good.</p>
+        <a class="btn btn-large btn-primary" href="../app/IceGame/index.html">点击查看 &raquo;</a>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="img-circle" src="../assets/img/app/ghostmenu.jpg" height="193" width="344" style="border-radius: 500px;float: left; margin-right:8%;" >
+        <h2 class="featurette-heading">GhostMenu  <span class="muted">控件</span></h2>
+        <p class="lead">使用CSS3中的 Transition,Tranform,box-sizing属性并考虑到各大浏览器支持            
+        </p>
+        <a class="btn btn-large btn-primary" href="../app/GostMenu/GostMenu.html">点击查看 &raquo;</a>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="featurette">
+        <img class="img-circle" src="../assets/img/app/tooltip.jpg" height="-1" width="-1" style="border-radius: 500px;float: left; margin-right:8%;" >
+        <h2 class="featurette-heading">ToolTip提示框 <span class="muted"></span></h2>
+        <p class="lead">当用户将鼠标指针移到具有工具提示的元素上时，包含工具提示内容（如描述控件功能的文本内容）的窗口将会出现，
+        该窗口在经过指定的时间后将会消失。用户从控件中移走鼠标指针，则该窗口将会消失，</p>
+        <a class="btn btn-large btn-primary" href="../app/Tooltip/tooltip.html">点击查看 &raquo;</a>
+      </div>
+
+       <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="img-circle" src="../assets/img/app/stylelist.jpg" height="193" width="344" style="border-radius: 500px;float: left; margin-right:8%;" >
+        <h2 class="featurette-heading">Stylelist列表切换 <span class="muted"></span></h2>
+        <p class="lead">核心内容：1.CSS 经典计算2.布局设计3.jQuery 使用 <span>在展示信息的页面中，经常会有为了展示主要内容而隐藏附属内容。而这些附属内容恰恰又是我们需要看到的内容。所以为了适应这两种情况，信息列表的切换成为了很好的选择。</span></p>
+        <a class="btn btn-large btn-primary" href="../app/StyleList/stylelist.html">点击查看 &raquo;</a>
+      </div>
+
+    
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="img-circle" src="../assets/img/app/stylelist.jpg" height="193" width="344" style="border-radius: 500px;float: left; margin-right:8%;" >
+        <h2 class="featurette-heading">选中文字分享 <span class="muted"></span></h2>
+        <p class="lead">核心内容：1.CSS 经典计算2.布局设计3.jQuery 使用 <span>在展示信息的页面中，经常会有为了展示主要内容而隐藏附属内容。而这些附属内容恰恰又是我们需要看到的内容。所以为了适应这两种情况，信息列表的切换成为了很好的选择。</span></p>
+        <a class="btn btn-large btn-primary" href="../app/share/share.html">点击查看 &raquo;</a>
+      </div>
+
+      <!-- /END THE FEATURETTES -->
+      
+      <!-- TOPBACK --返回顶部按钮-->
+
+        <a href="javascript:;"  style="display:none" id="top_btn" class="top_btn"><img id="backimg" class="img-circle"  src="../assets/img/app/backbtn-black.jpg"style="width: 100px;" title="返回顶部"></a>s
+
+
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -
+    </body>

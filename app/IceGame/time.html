@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<title>time remaining</title>  
+</head>  
+<!--html部分很简单，需要被javascript控制的行内文本与提交按钮都被编上ID-->
+<body>  
+剩余时间：<span id="timer"></span>  
+<input id="go" type="submit" value="go" />  
+</body>  
+</html>  
+<script>  
+/*主函数要使用的函数，进行声明*/  
+var clock=new clock();  
+/*指向计时器的指针*/  
+var timer;  
+window.onload=function(){  
+    /*主函数就在每50秒调用1次clock函数中的move方法即可*/  
+    timer=setInterval("clock.move()",50);  
+    }  
+function clock(){  
+    /*s是clock()中的变量，非var那种全局变量，代表剩余秒数*/  
+    this.s=140;  
+    this.move=function(){  
+        /*输出前先调用exchange函数进行秒到分秒的转换，因为exchange并非在主函数window.onload使用，因此不需要进行声明*/  
+        document.getElementById("timer").innerHTML=exchange(this.s);  
+        /*每被调用一次，剩余秒数就自减*/  
+        this.s=this.s-1;  
+        /*如果时间耗尽，那么，弹窗，使按钮不可用，停止不停调用clock函数中的move()*/  
+        if(this.s<0){  
+            alert("时间到");  
+            document.getElementById("go").disabled=true;  
+            clearTimeout(timer);  
+            }  
+        }  
+    }  
+function exchange(time){  
+    /*javascript的除法是浮点除法，必须使用Math.floor取其整数部分*/  
+        this.m=Math.floor(time/60);  
+        /*存在取余运算*/  
+        this.s=(time%60);  
+        this.text=this.m+"分"+this.s+"秒";  
+        /*传过来的形式参数time不要使用this，而其余在本函数使用的变量则必须使用this*/  
+        return this.text;  
+}  
+</script>

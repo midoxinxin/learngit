@@ -1,0 +1,55 @@
+/* 
+* @Author: wenxin.dong
+* @Date:   2015-10-06 09:38:43
+* @Last Modified by:   anchen
+* @Last Modified time: 2015-10-06 11:22:25
+*/
+*{
+    padding:0;
+    margin:0;
+    background-color: #eeeeee;
+}
+ul{
+   list-style-type:none;  /*默认的样式去掉*/
+
+}
+.box{
+    width:789px;
+    height:auto;
+    margin:100px auto;
+}
+.list-box{
+    margin:0 auto;
+    width:700px;
+    height:42px;
+    border-bottom:1px solid #eeeeee;
+}
+.list{
+
+    float:right;
+    padding-top: 10px;
+}
+    .list-box ul li{
+    cursor:pointer ;  /*点击切换手指*/
+    width:30px;           /*一个图片栅格width:30px;height:26px;*/
+    height:26px;  
+    float:left;
+    display:block;
+    background:url("img/listype-icon.png") no-repeat;
+
+    }
+    .changelist .list-1-o{
+
+    height:240px;
+    width:240px;
+    border:1px solid #aaaaaa;
+    float:left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    }
+    .changelist .list-2-v{
+        height:170px;
+
+
+    }
