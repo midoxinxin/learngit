@@ -2,6 +2,6 @@
 
 
 
-http:\\misslays.sinaapp.com
+http:\\\misslays.sinaapp.com
 
-SVN：http:\\svn.sinaapp.com/misslays
+SVN：http:\\\svn.sinaapp.com/misslays
